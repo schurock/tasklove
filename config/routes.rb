@@ -1,6 +1,8 @@
 Tasklove::Application.routes.draw do
   get "todos/index"
-  get "/todos/delete"
+  match "todos/delete" => "todos#delete", :as => :delete
+  match "todos/add" => "todos#add", :via => :post
+  match 'todos/complete' => 'todos#complete', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

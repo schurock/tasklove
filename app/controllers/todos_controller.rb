@@ -6,7 +6,7 @@ class TodosController < ApplicationController
   
   def delete
     @last = Todo.last.delete
-	redirect_to action: 'index'
+  redirect_to action: 'index'
   end 
   
   def add
