@@ -1,4 +1,7 @@
 Tasklove::Application.routes.draw do
+  get "todos/index"
+  get "/todos/delete"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
